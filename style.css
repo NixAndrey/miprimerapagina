@@ -1,0 +1,586 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Young Serif", serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1.9em;
+}
+h3 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1.25;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: blueviolet;
+}
+
+button:hover {
+  background-color: rgb(73, 27, 117);
+}
+
+/*header "encabezado"*/
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#encabezado {
+  background-color: rgb(245, 245, 245);
+  height: 80px;
+}
+
+.main-desk {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.checkboton {
+  font-size: 18px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 30px;
+  cursor: pointer;
+  background: #2c3e50;
+}
+
+#encabezado a i {
+  font-size: 50px;
+  float: left;
+  line-height: 80px;
+  margin-left: 30px;
+}
+
+/*propiedades del menu hamburguesa con js*/
+#encabezado nav .main-menu {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  background-color: #2c3e50;
+  text-align: center;
+
+  top: 80px;
+  left: -100%;
+  transition: all 0.5s;
+}
+
+#encabezado nav .main-menu.visible {
+  left: 0;
+} 
+
+/*propiedades del menu hamburguesa con css*/
+/* #encabezado nav .main-menu {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  background-color: #2c3e50;
+  text-align: center;
+
+  top: 80px;
+  left: -100%;
+  transition: all 0.5s;
+}
+
+#check:checked ~ .main-menu {
+  left: 0;
+}  */
+
+
+#encabezado .main-menu li {
+  display: block;
+  margin: 20px;
+  padding: 10px 5px;
+}
+
+#encabezado .main-menu li a {
+  font-size: 20px;
+  color: black;
+}
+
+#encabezado .main-menu li a:hover {
+  color: blueviolet;
+}
+
+
+
+
+/*hero*/
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/PWDC/mi_primera_web/Imagenes/INTRODUCCION.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero .titulo1 {
+  font-size: 2em;
+}
+
+#hero button {
+  margin-top: 60px;
+  font-size: 1.2em;
+}
+
+/*sobre-mi*/
+
+#sobre-mi .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#stylo1 {
+  color: blueviolet;
+}
+
+#sobre-mi .titulo2 {
+  font-size: 2em;
+}
+
+#sobre-mi .parrafo1 {
+  margin-top: 20px;
+  color: black;
+}
+
+/*servicios*/
+
+#servicios {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+
+#servicios .container {
+  padding: 100px 12px;
+}
+
+#servicios .titulo3 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#servicios p {
+  display: none;
+}
+
+#servicios .cartas {
+  background-size: cover;
+  background-position: center center;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.cartas:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/PWDC/mi_primera_web/Imagenes/html-css.jpeg);
+}
+
+.cartas:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/PWDC/mi_primera_web/Imagenes/js-python.webp);
+}
+
+.cartas:last-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/PWDC/mi_primera_web/Imagenes/sql.png);
+}
+
+/*propaganda*/
+
+#propaganda {
+  padding: 150px 12px;
+  text-align: center;
+  margin: 16px 0px;
+}
+
+#propaganda button {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+/*contacto*/
+
+#contacto {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  height: 80vh;
+  padding: 0 5px;
+}
+
+#contacto .container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 12px;
+}
+
+#contacto .form {
+  margin-top: 50px;
+}
+
+#contacto .form .form-org {
+  margin: 20px;
+}
+
+#contacto .form .form-org input {
+  border: 0;
+  border-radius: 5px;
+  background: rgba(210, 210, 210, 210);
+}
+
+#contacto .form .form-org textarea {
+  border: 0;
+  border-radius: 5px;
+  background: rgba(210, 210, 210, 210);
+}
+
+/*final*/
+
+#final {
+  background-color: rgb(230, 230, 230);
+}
+
+#final p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+  font-size: 10px;
+}
+
+#final .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+
+/*version tablet*/
+
+@media (min-width: 550px) {
+  #encabezado .main-menu li a {
+    font-size: 1.8em;
+    color: black;
+  }
+
+  #hero .titulo1 {
+    font-size: 3em;
+  }
+
+  #hero button {
+    margin-top: 60px;
+    font-size: 1.5em;
+  }
+
+  #sobre-mi .titulo2 {
+    font-size: 3em;
+  }
+
+  #sobre-mi .parrafo1 {
+    margin-top: 20px;
+    color: black;
+    font-size: 1.5em;
+  }
+
+  #servicios .cartas h3 {
+    font-size: 2em;
+  }
+
+  #propaganda h2 {
+    font-size: 2em;
+  }
+
+  #propaganda button {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+
+  #contacto .form {
+    margin-top: 50px;
+    font-size: 1.5em;
+  }
+
+  #contacto h3 {
+    font-size: 2.5em;
+  }
+}
+
+/*version desk */
+@media (min-width: 768px) {
+  #encabezado {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(210, 210, 210, 210);
+    height: 80px;
+  }
+
+  .main-desk {
+    display: block;
+    height: 80px;
+
+  }
+
+  .main-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+  }
+
+  .main-2 li {
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .main-2 li a {
+    color: black;
+  }
+
+  .main-2 li a:hover {
+    color: blueviolet;
+  }
+
+  #check {
+    display: none;
+  }
+
+  .checkboton {
+    font-size: 50px;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #encabezado .container #menu-btn {
+    display: none;
+  }
+
+  #hero .titulo1 {
+    font-size: 5em;
+    font-weight: bold;
+  }
+  
+  #hero button {
+    margin-top: 40px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  #sobre-mi .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #sobre-mi .texto {
+    width: 500px;
+    max-width: 600px;
+    padding: 10px 12px;
+    margin-left: 20px;
+  }
+
+  #sobre-mi .titulo2 {
+    font-size: 4em;
+    font-weight: bold;
+    margin-left: 20px;
+    text-align: initial;
+  }
+  
+  #sobre-mi .parrafo1 {
+    margin-top: 30px;
+    color: black;
+    text-align: initial;
+  }
+ 
+
+  #sobre-mi .img-container {
+    background-image: url("/PWDC/mi_primera_web/Imagenes/caricatura-sobremi.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+    min-width: 300px;
+  }
+
+  #servicios .programas {
+    display: flex;
+    justify-content: center;
+  }
+
+  #servicios p {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #servicios .titulo3 {
+    margin-top: 0;
+    font-size: 4em;
+  }
+
+  #servicios h3 {
+    font-size: 1em;
+    margin-top: 0;
+  }
+
+  #servicios .cartas {
+    padding: 30px;
+    min-width: 260px;
+    min-height: 600px;
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(50, 50, 50, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .cartas:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/PWDC/mi_primera_web/Imagenes/html-css-cropped.jpg);
+  }
+
+  .cartas:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/PWDC/mi_primera_web/Imagenes/js-python-cropped.jpg);
+  }
+
+  .cartas:last-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/PWDC/mi_primera_web/Imagenes/sql-cropped.jpg);
+  }
+
+  #propaganda{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("/PWDC/mi_primera_web/Imagenes/fondo-propaganda.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+
+  #propaganda h2 {
+    font-size: 3em;
+    font-weight: bold;
+  }
+
+  #propaganda button {
+    font-size: 2em;
+  }
+
+  #contacto .container {
+    margin: auto;
+  }
+
+  #contacto .form {
+    width: 900px;
+  }
+
+  #contacto .form .form-org input[type="text"] {
+    border: 0;
+    border-radius: 5px;
+    width: 600px;
+  }
+
+  #contacto .form .form-org input[type="email"] {
+    border: 0;
+    border-radius: 5px;
+    width: 600px;
+  }
+
+  #contacto h3 {
+    font-weight: bold;
+    font-size: 4em;
+  }
+
+  #contacto label {
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+}
+
+

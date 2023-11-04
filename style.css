@@ -156,7 +156,7 @@ button:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(/PWDC/mi_primera_web/Imagenes/INTRODUCCION.jpg);
+    url(Imagenes/INTRODUCCION.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -226,7 +226,7 @@ button:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(/PWDC/mi_primera_web/Imagenes/html-css.jpeg);
+    url(Imagenes/html-css.jpeg);
 }
 
 .cartas:nth-child(2) {
@@ -235,7 +235,7 @@ button:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(/PWDC/mi_primera_web/Imagenes/js-python.webp);
+    url(Imagenes/js-python.webp);
 }
 
 .cartas:last-child {
@@ -244,7 +244,7 @@ button:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(/PWDC/mi_primera_web/Imagenes/sql.png);
+    url(Imagenes/sql.png);
 }
 
 /*propaganda*/
@@ -464,7 +464,7 @@ button:hover {
  
 
   #sobre-mi .img-container {
-    background-image: url("/PWDC/mi_primera_web/Imagenes/caricatura-sobremi.jpg");
+    background-image: url("Imagenes/caricatura-sobremi.jpg");
     background-size: cover;
     background-position: center center;
     height: 500px;
@@ -509,7 +509,7 @@ button:hover {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url(/PWDC/mi_primera_web/Imagenes/html-css-cropped.jpg);
+      url(Imagenes/html-css-cropped.jpg);
   }
 
   .cartas:nth-child(2) {
@@ -518,7 +518,7 @@ button:hover {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url(/PWDC/mi_primera_web/Imagenes/js-python-cropped.jpg);
+      url(Imagenes/js-python-cropped.jpg);
   }
 
   .cartas:last-child {
@@ -527,7 +527,7 @@ button:hover {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url(/PWDC/mi_primera_web/Imagenes/sql-cropped.jpg);
+      url(Imagenes/sql-cropped.jpg);
   }
 
   #propaganda{
@@ -535,7 +535,7 @@ button:hover {
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ), url("/PWDC/mi_primera_web/Imagenes/fondo-propaganda.webp");
+    ), url("Imagenes/fondo-propaganda.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
